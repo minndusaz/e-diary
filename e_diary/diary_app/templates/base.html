@@ -1,11 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Private School Diary</title>
 </head>
 <body>
-    Sveiki
+    <header>
+        <h1>Private School Diary</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/students/">Students</a></li>
+                <li><a href="/teachers/">Teachers</a></li>
+                <li><a href="/parents/">Parents</a></li>
+                <li><a href="/subjects/">Subjects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
 </body>
 </html>
